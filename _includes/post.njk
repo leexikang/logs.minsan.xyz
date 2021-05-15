@@ -1,0 +1,11 @@
+---
+layout: main.layout.njk
+---
+<div class="row">
+    <div class="col">
+        <div>
+            <p>{{ content | safe }}</p>
+            <span class="meta-text"> {{ page.date.toUTCString() }}</span>
+        </div>
+    </div>
+</div>

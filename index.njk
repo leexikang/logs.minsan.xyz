@@ -1,0 +1,19 @@
+---
+layout: main.layout.njk
+eleventyNavigation:
+  key: Home
+  order: 1
+---
+{%- for post in collections.post -%}
+<a href="{{post.url}}" class="post-container-btn">
+  <div class="row post-container">
+      <div class="col">
+          <div>
+          
+              <p>{{ post.templateContent | safe }}</p>
+              <span class="meta-text"> {{ post.data.date.toUTCString() }}</span>
+          </div>
+      </div>
+  </div>
+</a>
+{%- endfor -%}

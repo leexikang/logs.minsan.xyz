@@ -1,0 +1,27 @@
+body{
+    background-color: #121212;
+    color: #D5D5D6;
+}
+
+header{
+    padding: 10px 0;
+}
+
+.post-container{
+    padding: 16px 0;
+    text-align: justify;
+}
+
+.post-container-btn{
+    text-decoration: none;
+    color: #D5D5D6;
+}
+
+.post-container-btn:hover{
+    color: #D5D5D6;
+}
+
+.meta-text{
+    color: #ADBAC7;
+    font-size: 12px;
+}

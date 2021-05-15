@@ -1,0 +1,11 @@
+{
+  "name": "logs.minsan.xyz",
+  "version": "1.0.0",
+  "description": "Logging what is happning in mylife",
+  "main": "index.js",
+  "author": "minsan",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}
