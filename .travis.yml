@@ -1,6 +1,16 @@
 language: node_js
 node_js:
-  - 12
+  - 14
 before_script:
   - npm install @11ty/eleventy -g
-script: eleventy -pathprefix="/logs.minsan.xyz/"
+script: eleventy
+deploy:
+  provider: s3
+  access_key_id: $AWS_ACCESS_ID
+  secret_access_key: $AWS_SECRET_KEY_ID
+  bucket: $BUCKET
+  regeion: $AWS_REGION
+  local_dir: _site/
+  skip_cleanup: true
+  on:
+    main
