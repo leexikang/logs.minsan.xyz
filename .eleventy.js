@@ -2,6 +2,7 @@ const fs = require('fs');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('css');
+  eleventyConfig.addPassthroughCopy('admin');
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
       ready: function (err, bs) {
