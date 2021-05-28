@@ -3,8 +3,13 @@ layout: main.layout.njk
 eleventyNavigation:
   key: Home
   order: 1
+pagination:
+  data: collections.post
+  size: 40
+  alias: posts
+  reverse: true
 ---
-{%- for post in collections.post -%}
+{%- for post in posts -%}
 <a href="{{post.url}}" class="post-container-btn">
   <div class="row post-container">
       <div class="col">
